@@ -4,7 +4,7 @@ const https = require('https');
 const url = "https://teamtreehouse.com/danieldeutsch3.json";
 
 https.get(url, (res) => {
-  console.dir(res);
+  console.dir(res.statusCode);
 
 //   res.on('data', (d) => {
 //     process.stdout.write(d);
